@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  font: #{$body-font-size}/1.4 $body-font;
+}
+
+body {
+  font: #{$body-font-size}/1.4 $body-font;
+  color: $brand-gray-dark;
+  background-color: #fff;
+}
+
+a {
+  color: $brand-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+.docs-area {
+  position: relative;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 1.4;
+  border: 1px solid #e5e5e5;
+  border-radius: .25rem .25rem 0 0;
+
+  + .highlight {
+    margin-top: -1px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0 0 .25rem .25rem;
+  }
+
+  > p:last-child,
+  > .menu:last-child,
+  > .tabnav:last-child,
+  > blockquote:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu,
+  .filter-list,
+  .sunken-menu {
+    max-width: 200px;
+  }}
+
+// Horizontal lines
+//
+// TODO-MDO: Remove `.rule` from everywhere and replace with `<hr>`s
+hr,
+.rule {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  @include clearfix();
+}
