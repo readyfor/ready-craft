@@ -14,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/readyfor/ready-craft/issues"
   },
-  "homepage": "https://github.com/readyfor/ready-craft#readme"
+  "homepage": "https://github.com/readyfor/ready-craft#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5"
+  }
 }
